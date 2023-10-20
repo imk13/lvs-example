@@ -5,9 +5,9 @@ Install the necessary libraries. Once you have chosen a programming language and
 Make an HTTP request to the IPVSADM HTTP API to get proxy information. The IPVSADM HTTP API is a REST API that provides access to IPVS configuration data. To get proxy information, you can send an HTTP GET request to the /proxy endpoint.
 Parse the API response to extract the proxy information. The IPVSADM HTTP API returns JSON responses. You can use a JSON parser to parse the response and extract the proxy information that you need.
 Integrate the proxy information into your agent app. Once you have parsed the API response, you can integrate the proxy information into your agent app however you need. For example, you could display the proxy information in a user interface, store it in a database, or use it to perform some other task.
-Here is a simple example of how to integrate the IPVSADM HTTP API into a Python agent app to get proxy information:
+Here is a simple example of how to integrate the IPVSADM HTTP API into a Python agent app to get proxy information. Use code with caution.
 
-Python
+```
 import requests
 
 # Set the IPVSADM HTTP API URL
@@ -22,7 +22,9 @@ proxies = response.json()['proxies']
 # Iterate over the list of proxies and print their names
 for proxy in proxies:
     print(proxy['name'])
-Use code with caution. Learn more
+
+```
+
 This example shows how to make a simple HTTP GET request to the IPVSADM HTTP API to get a list of proxies. The response is then parsed to extract the list of proxies, which is then iterated over and printed to the console.
 
 You can use this example as a starting point to integrate the IPVSADM HTTP API into your own agent app to get proxy information. The specific steps involved will vary depending on the programming language and framework that you are using.
