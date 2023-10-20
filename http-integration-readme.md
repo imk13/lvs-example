@@ -6,6 +6,7 @@ Make an HTTP request to the IPVSADM HTTP API to get proxy information. The IPVSA
 Parse the API response to extract the proxy information. The IPVSADM HTTP API returns JSON responses. You can use a JSON parser to parse the response and extract the proxy information that you need.
 Integrate the proxy information into your agent app. Once you have parsed the API response, you can integrate the proxy information into your agent app however you need. For example, you could display the proxy information in a user interface, store it in a database, or use it to perform some other task.
 </p>
+
 **Here is a simple example of how to integrate the IPVSADM HTTP API into a Python agent app to get proxy information. Use code with caution.**
 
 ```
