@@ -45,3 +45,8 @@ Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
 ```
 
 Your connections should now be load balanced using round robin.
+
+
+How to setup LVS:
+
+https://dev.to/douglasmakey/how-to-setup-simple-load-balancing-with-ipvs-demo-with-docker-4j1d
